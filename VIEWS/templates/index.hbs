@@ -1,0 +1,71 @@
+<br>
+<section class="saludo">
+    <h1 class="display-1" style="font-size: 60px;">Bienvenido Studybacks</h1>
+</section>
+
+<br>
+
+<section class="formulario">
+    <div class="container">
+        <h3 class="display-6">Agregar nueva tarea, nota o recordatorio</h3>
+        <form id="formulario" class="row g-3">
+            <div class="col-md-6">
+                <label for="titulo" class="form-label">Título</label>
+                <input type="text" class="form-control" id="titulo" required>
+            </div>
+            <div class="col-md-6">
+                <label for="tipo" class="form-label">Tipo</label>
+                <select id="tipo" class="form-select" required>
+                    <option value="notas">Notas</option>
+                    <option value="tacks">Tareas</option>
+                    <option value="recordatorios">Recordatorios</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <label for="descripcion" class="form-label">Descripción</label>
+                <textarea class="form-control" id="descripcion" rows="3" required></textarea>
+            </div>
+            <div class="col-12">
+                <label for="fecha" class="form-label">Fecha de Presentación</label>
+                <input type="date" class="form-control" id="fecha" required>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Agregar</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<br>
+
+<section class="inicio">
+    <div class="recientes">
+        <h3 class="display-6">Notas las últimas 24 horas</h3>
+        <ul class="list-group" id="notas">
+            <!-- Aquí se imprimirán las notas que se agregaron durante las últimas 24 horas -->
+        </ul>
+    </div>
+
+    <div class="recientes">
+        <h3 class="display-6">Tacks durante las últimas 24 horas</h3>
+        <table class="table table-striped" id="tacks">
+            <thead>
+                <tr>
+                    <th scope="col">Título</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Fecha de Presentación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se imprimirán las tareas que se agregaron durante las últimas 24 horas -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="recientes">
+        <h3 class="display-6">Recordatorios durante las últimas 24 horas</h3>
+        <ul class="list-group" id="recordatorios">
+            <!-- Aquí se imprimirán los recordatorios que se agregaron durante las últimas 24 horas -->
+        </ul>
+    </div>
+</section>

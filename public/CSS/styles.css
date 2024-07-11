@@ -1,0 +1,56 @@
+.navbar {
+    background-color: darkblue; 
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000; /* Texto negro para fondo claro */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; 
+}
+.saludo {
+    background-color: #f4f4f4;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.inicio {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.formulario {
+    background-color: #f4f4f4;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px; /* Añade bordes redondeados */
+}
+
+.recientes {
+    width: 100%;
+    background-color: #f4f4f4;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px; /* Añade un margen inferior para separar las secciones */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    border-radius: 10px; /* Añade bordes redondeados */
+}
+
+.display-6 {
+    position: static;
+    margin: 0; /* Elimina el margen predeterminado de h3 */
+    font-size: 27px;
+}
