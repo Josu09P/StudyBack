@@ -19,8 +19,14 @@ app.set('views', path.join(__dirname, 'views/templates'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Ruta para la página principal
-app.get('/', (req, res) => {
+app.get('/', (req, res, next) => {
   res.render('index');
+});
+
+// Middleware para manejar errores
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Error Interno del Servidor');
 });
 
 app.listen(3000, () => {
