@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Ruta para la página principal
 app.get('/', (req, res, next) => {
-  res.render('index');
+  res.render('index.hbs');
 });
 
 // Middleware para manejar errores
